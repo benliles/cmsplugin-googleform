@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 
 
-version = '0.1'
+version = '12.1'
 
 setup(
     name = 'cmsplugin-googleform',
@@ -14,8 +14,7 @@ setup(
                        open(join(dirname(__file__), 'HISTORY.rst')).read(),
     classifiers = [
         "Framework :: Django",
-        "Development Status :: 3 - Alpha",
-        #"Development Status :: 4 - Beta",
+        "Development Status :: 4 - Beta",
         #"Development Status :: 5 - Production/Stable",
         "Programming Language :: Python",
         "Topic :: Internet :: WWW/HTTP",
