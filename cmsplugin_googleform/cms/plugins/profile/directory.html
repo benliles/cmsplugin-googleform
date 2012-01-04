@@ -1,0 +1,36 @@
+{% if object.items.count > 0 %}
+<ul class="directory">
+	{% for person in object.items %}
+	<li>
+		{% if person.photo %}
+		<img
+			src="{{ person.photo.get_directory_url }}" 
+			alt="Photo of {{ person.get_display_name }}" class="right" />
+		{% endif %}
+		<h2>{{ person.get_display_name }}</h2>
+		{% if person.official_title %}<div class="title">{{ person.official_title }}</div>{% endif %}
+		{% if person.title %}<div class="title">{{ person.title|linebreaksbr }}</div>{% endif %}
+		{% if person.get_units %}<div class="title">{{ person.get_units|join:", " }}</div>{% endif %}
+		
+		{% if person.office_location or person.office_phone or person.get_email %}
+		<dl class="contact">
+			{% if person.office_location %}
+			<dt>Location</dt>
+			<dd>{{ person.office_location|linebreaksbr }}</dd>
+			{% endif %}
+			{% if person.office_phone %}
+			<dt>Phone</dt>
+			<dd>{{ person.office_phone }}</dd>
+			{% endif %}
+			{% if person.get_email %}
+			<dt>E-mail</dt>
+			<dd>{{ person.get_email }}</dd>
+			{% endif %}
+		</dl>
+		{% endif %}
+		{% if person.education %}<div class="education">{{ person.education|linebreaksbr }}</div>{% endif %}
+		{% if person.interests %}<div class="interests">{{ person.interests|linebreaksbr }}</div>{% endif %}
+	</li>
+	{% endfor %}
+</ul>
+{% endif %}

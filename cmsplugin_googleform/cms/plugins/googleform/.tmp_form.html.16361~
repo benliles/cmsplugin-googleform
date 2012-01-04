@@ -1,0 +1,15 @@
+<p>
+	{{ events }}
+{% for event in events %}
+    {{ events.next }}
+    <div>{{ event|length }}</div>
+    <h3>{{ event.title }}</h3>
+	<div><a href="http://calendar.tamu.edu/?&eventdatetime_id={{ event.event_id }}">Event Page</a></div>
+	<div><strong>Description: </strong> {{ event.description }}</div>
+	<div><strong>Location:</strong> {{ event.location }}</div>
+	<div><a href="{{ event.map_link }}">Map Location</a></div>
+	<div><strong>Start Date: </strong> {{ event.start_date }}</div>
+	<div><strong>End Date: </strong> {{ event.end_date }}</div>
+	<br />
+{% endfor %}
+</p>

@@ -1,0 +1,26 @@
+{% extends "cms/one_column.html" %}
+{% load cms_tags %}
+{% block body-attributes %} class="frontpage"{% endblock %}
+{% block content %}
+<div class="{% block yui-class %}yui-gc{% endblock %}">
+	<div class="yui-gc first">
+		<div class="yui-u first">
+			{% block column-one-content %}
+			<div class="content">
+			{% placeholder column-one %}
+			</div>
+			{% endblock %}
+		</div>
+		<div class="yui-u">
+			{% block column-two-content %}
+			{% placeholder column-two %}
+			{% endblock %}
+		</div>
+	</div>
+	<div class="yui-u">
+		{% block column-three-content %}
+		{% placeholder column-three %}
+		{% endblock %}
+	</div>
+</div>
+{% endblock content %}
