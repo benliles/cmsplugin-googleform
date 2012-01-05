@@ -4,8 +4,6 @@ from django.utils.translation import ugettext_lazy as _
 
 from cms.models import CMSPlugin
 
-
-
 class GoogleFormsPlugin(CMSPlugin):
     form_id = models.CharField(max_length=64)
     template = models.CharField(max_length=255, null=True, blank=True)
