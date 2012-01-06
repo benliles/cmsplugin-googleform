@@ -33,5 +33,5 @@ In the embed markup, copy the string after ``formkey=`` and paste it in the cmsp
 It is recommended that you fill out the **Height** and **Width** fields for the form (though it is not required).
 
 **Example embed code:**
-``<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=`` **dG9jLXJSYUY1a3NiYTRLYWs3S1F0aHc6MA** ``" width="760" height="639" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>``
+``<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=**dG9jLXJSYUY1a3NiYTRLYWs3S1F0xxxxxxx** " width="760" height="639" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>``
 
