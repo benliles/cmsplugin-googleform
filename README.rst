@@ -27,8 +27,8 @@ Add ``cmsplugin_googleform`` to the ``INSTALLED_APPS`` list in your project's
 What's Inside
 -------------
 
-When you add the plugin to a page, you will required to input a **Form key**. To find the ``formkey`` for a form, in the form spreadsheet go to ``Form>Embed for in webpage``.
-In the embed markup, copy the string after ``formkey=`` and paste it in the cmsplugin-googleform **Form key** field.
+When you add the plugin to a page, you will required to input a **Form key**. To find the ``formkey`` for a form, at the top of the form spreadsheet in Google Documents, go to ``Form > Embed for in webpage...``.
+In the embed code, copy the string after ``formkey=`` and paste it in the cmsplugin-googleform **Form key** field.
 
 It is recommended that you fill out the **Height** and **Width** fields for the form (though it is not required).
 
