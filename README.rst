@@ -29,6 +29,7 @@ What's Inside
 
 When you add the plugin to a page, you will required to input a **Form key**. To find the ``formkey`` for a form, at the top of the form spreadsheet in Google Documents, go to ``Form > Embed form in webpage...``.
 In the embed code, copy the string after ``formkey=`` and paste it in the cmsplugin-googleform **Form key** field.
+
 **Example embed code:**
 ``<iframe... formkey=dG9jLXJSYUY1a3NiYTRLYWs3S1F0xxxxxxx"...</iframe>``
 
