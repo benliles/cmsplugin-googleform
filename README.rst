@@ -33,5 +33,5 @@ In the embed markup, copy the string after ``formkey=`` and paste it in the cmsp
 It is recommended that you fill out the **Height** and **Width** fields for the form (though it is not required).
 
 **Example embed code:**
-``<iframe... formkey=**dG9jLXJSYUY1a3NiYTRLYWs3S1F0xxxxxxx**"...</iframe>``
+``<iframe... formkey=dG9jLXJSYUY1a3NiYTRLYWs3S1F0xxxxxxx"...</iframe>``
 
