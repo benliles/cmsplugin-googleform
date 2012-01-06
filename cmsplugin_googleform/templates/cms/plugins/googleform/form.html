@@ -1,3 +1,28 @@
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form }}" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-
+{% if form_height and form_width != None %}
+<p>both</p>
+<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
+	height="{{ form_height }}" width="{{ form_width }}" frameborder="0" marginheight="0" marginwidth="0">
+	Loading...
+</iframe>
+{% endif %}
+{% if form_height != None and form_width == None %}
+<p>height</p>
+<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
+	height="{{ form_height }}" frameborder="0" marginheight="0" marginwidth="0">
+	Loading...
+</iframe>
+{% endif %}
+{% if form_height == None and form_width != None %}
+<p>width</p>
+<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
+	width="{{ form_width }}" frameborder="0" marginheight="0" marginwidth="0">
+	Loading...
+</iframe>
+{% endif %}
+{% if form_height == None and form_width == None %}
+<p>neither</p>
+<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
+	height="500" width="500" frameborder="0" marginheight="0" marginwidth="0">
+	Loading...
+</iframe>
+{% endif %}

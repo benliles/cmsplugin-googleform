@@ -12,9 +12,10 @@ class CMSGoogleFormsPlugin(CMSPluginBase):
     render_template = 'cms/plugins/googleform/form.html'
     
     def render(self, context, instance, placeholder):
-        form_key = instance.form_id
-        context.update({'form': form_key })
-        
+        context.update({'form_key': instance.form_id,
+                        'form_width': instance.width,
+                        'form_height': instance.height
+                         })
         return context
 
 plugin_pool.register_plugin(CMSGoogleFormsPlugin)
