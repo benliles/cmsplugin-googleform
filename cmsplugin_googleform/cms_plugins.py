@@ -9,7 +9,7 @@ from cmsplugin_googleform.models import GoogleFormsPlugin
 class CMSGoogleFormsPlugin(CMSPluginBase):
     model = GoogleFormsPlugin
     name = _('Google Forms Plugin')
-    render_template = 'cms/plugins/googleform/form.html'
+    render_template = 'cms/plugins/googleform/googleform.html'
     
     def render(self, context, instance, placeholder):
         context.update({'form_key': instance.form_id,
