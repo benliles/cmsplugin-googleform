@@ -1,28 +1,6 @@
-{% if form_height and form_width %}
-<p>both</p>
+<div class="google-form">
 <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
-	height="{{ form_height }}" width="{{ form_width }}" frameborder="0" marginheight="0" marginwidth="0">
+	height="{{ form_height|default:"400" }}" width="{{ form_width|default:"200" }}" frameborder="0" marginheight="0" marginwidth="0">
 	Loading...
 </iframe>
-{% endif %}
-{% if form_height and not form_width %}
-<p>height</p>
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
-	height="{{ form_height }}" frameborder="0" marginheight="0" marginwidth="0">
-	Loading...
-</iframe>
-{% endif %}
-{% if not form_height and form_width %}
-<p>width</p>
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
-	width="{{ form_width }}" frameborder="0" marginheight="0" marginwidth="0">
-	Loading...
-</iframe>
-{% endif %}
-{% if not form_height and not form_width %}
-<p>neither</p>
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey={{ form_key }}" 
-	height="500" width="500" frameborder="0" marginheight="0" marginwidth="0">
-	Loading...
-</iframe>
-{% endif %}
+</div>

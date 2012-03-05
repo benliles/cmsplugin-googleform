@@ -1,0 +1,104 @@
+[
+    {
+        "pk": 1, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "rightbar", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "banner", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "cms.placeholder", 
+        "fields": {
+            "slot": "main content", 
+            "default_width": null
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "cms.cmsplugin", 
+        "fields": {
+            "rght": 2, 
+            "parent": null, 
+            "language": "en", 
+            "level": 0, 
+            "creation_date": "2012-03-05 11:44:31", 
+            "lft": 1, 
+            "tree_id": 1, 
+            "position": 0, 
+            "placeholder": 3, 
+            "plugin_type": "CMSGoogleFormsPlugin"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "cms.page", 
+        "fields": {
+            "rght": 2, 
+            "navigation_extenders": "", 
+            "site": 1, 
+            "creation_date": "2012-03-05 11:44:26", 
+            "lft": 1, 
+            "in_navigation": true, 
+            "reverse_id": null, 
+            "login_required": false, 
+            "created_by": "cfanning", 
+            "publication_end_date": null, 
+            "moderator_state": 0, 
+            "template": "cms/menu_two_column.html", 
+            "tree_id": 1, 
+            "placeholders": [
+                1, 
+                2, 
+                3
+            ], 
+            "limit_visibility_in_menu": null, 
+            "parent": null, 
+            "publisher_state": 1, 
+            "soft_root": false, 
+            "publication_date": "2012-03-05 11:44:46", 
+            "publisher_public": null, 
+            "level": 0, 
+            "changed_by": "cfanning", 
+            "publisher_is_draft": true, 
+            "published": true
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "cms.title", 
+        "fields": {
+            "menu_title": "", 
+            "redirect": "", 
+            "meta_keywords": "", 
+            "page_title": "", 
+            "language": "en", 
+            "title": "Google Forms", 
+            "has_url_overwrite": false, 
+            "application_urls": "", 
+            "creation_date": "2012-03-05 11:44:26", 
+            "page": 1, 
+            "path": "google-forms", 
+            "meta_description": "", 
+            "slug": "google-forms"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "cmsplugin_googleform.googleformsplugin", 
+        "fields": {
+            "width": null, 
+            "form_id": "dFRyc3NNRW10VTlneEx3Vmc0MDR4aHc6MQ", 
+            "height": null
+        }
+    }
+]
