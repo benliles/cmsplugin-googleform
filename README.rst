@@ -35,5 +35,3 @@ In the embed code, copy the string after ``formkey=`` and paste it in the cmsplu
 
 It is recommended that you fill out the **Height** and **Width** fields for the form (though it is not required).
 
-
-

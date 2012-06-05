@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 
 
-version = '12.1'
+version = '0.1'
 
 setup(
     name = 'cmsplugin-googleform',

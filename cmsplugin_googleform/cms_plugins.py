@@ -8,7 +8,7 @@ from cmsplugin_googleform.models import GoogleFormsPlugin
 
 class CMSGoogleFormsPlugin(CMSPluginBase):
     model = GoogleFormsPlugin
-    name = _('Google Forms')
+    name = _('Google Form')
     render_template = 'cms/plugins/googleform/googleform.html'
     
     def render(self, context, instance, placeholder):
